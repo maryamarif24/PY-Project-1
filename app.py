@@ -39,7 +39,7 @@ def speed_conversion(value, from_unit, to_unit):
 
 def time_conversion(value, from_unit, to_unit):
     time_units = {
-        "Second (s)": 1, "Minute (min)": 60, "Hour (h)": 3600, "Day (d)": 86400
+        "Second (s)": 86400, "Minute (min)": 1440, "Hour (h)": 24, "Day (d)": 1
     }
     return value * (time_units[to_unit] / time_units[from_unit])
 
